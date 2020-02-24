@@ -9,4 +9,4 @@ Connect.framework provides a fast way to embed the Connect flow in your iOS appl
 2. Import Connect
 3. Instantiate a ConnectViewConfig object, and provide the Connect URL & loaded, done, cancel, and error callback functions.
 4. Instantiate a ConnectViewController and provide the ConnectViewConfig when calling its load method.
-5. Add & Remove the ConnectViewController's view where desired -- typically in the loaded and done callbacks.
+5. Instantiate a UINavigationController using the ConnectViewController as its rootViewController, and present/dismiss that where desired -- typically in the loaded and done callbacks.
